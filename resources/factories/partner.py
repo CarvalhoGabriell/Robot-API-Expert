@@ -17,3 +17,26 @@ def factory_duplicate_partner():
         'business': 'Restaurante'
     }
     return partner
+
+def factory_list_partners():
+    list_partners = [
+         {
+        'name': 'Lazaro Conveniencia',
+        'email': 'contatoLL@ig.com.br',
+        'whatsapp': '21999999999',
+        'business': 'Conveniência'
+        }, 
+        {
+        'name': 'Burger Beachs And Cofee ',
+        'email': 'beach_burger@io.com',
+        'whatsapp': '11284736478',
+        'business': 'Restaurante'
+        },
+        {
+        'name': 'Pizzaria Lula Livre',
+        'email': 'lulaodamassa@io.com',
+        'whatsapp': '21100023678',
+        'business': 'Restaurante'
+        }
+    ]
+    return  list_partners

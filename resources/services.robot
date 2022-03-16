@@ -17,3 +17,11 @@ POST PARTNER
     ...            headers=${HEADERS}
     ...            expected_status=any
     [Return]       ${response}
+
+GET PARTNERS
+    [Arguments]
+    ${response}    GET        
+    ...            ${BASE_URL}        
+    ...            headers=${HEADERS}
+    ...            expected_status=any
+    [Return]       ${response}

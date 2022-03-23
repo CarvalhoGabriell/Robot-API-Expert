@@ -1,4 +1,33 @@
 
+def factory_partner_enable():
+    partner = {
+        'name': 'Dogão do Marcio',
+        'email': 'contatoDog@io.com.br',
+        'whatsapp': '62345123678',
+        'business': 'Restaurante'
+    }
+    return partner
+
+
+def factory_partner_delete():
+    partner = {
+        'name': 'Fátima Verduras',
+        'email': 'fatima123@io.com.br',
+        'whatsapp': '62345123678',
+        'business': 'Conveniência'
+    }
+    return partner
+
+def factory_partner_404():
+    partner = {
+        'name': 'Dogão do Marcio',
+        'email': 'contatoDog@io.com.br',
+        'whatsapp': '62345123678',
+        'business': 'Restaurante'
+    }
+    return partner
+
+
 def factory_new_partner():
     partner = {
         'name': 'Salgados Neymar',

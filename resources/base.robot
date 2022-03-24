@@ -3,4 +3,5 @@
 Documentation       Arquivo base do projeto contendo informações principais
 Resource            database.robot
 Resource            services.robot
-Library             factories/partner.py
+Resource            Messages/rabbit.robot
+Library             Python/partner.py

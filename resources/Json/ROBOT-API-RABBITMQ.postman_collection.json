@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "3adc9848-2012-4d1f-b433-d9cf705bb29d",
+		"name": "ROBOT-API-RABBITMQ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET MESAGE",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "rpLtDXfizMLuygTEvwz98_w8RPLoXOE8",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "vahizmsb",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vhost\": \"vahizmsb\",\r\n    \"name\": \"email\",\r\n    \"truncate\": \"50000\",\r\n    \"ackmode\": \"ack_requeue_true\",\r\n    \"encoding\": \"auto\",\r\n    \"count\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hornet.rmq.cloudamqp.com/api/queues/vahizmsb/email/get",
+					"protocol": "https",
+					"host": [
+						"hornet",
+						"rmq",
+						"cloudamqp",
+						"com"
+					],
+					"path": [
+						"api",
+						"queues",
+						"vahizmsb",
+						"email",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PURGE MESAGES",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "rpLtDXfizMLuygTEvwz98_w8RPLoXOE8",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "vahizmsb",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"vhost\": \"vahizmsb\",\r\n    \"name\": \"email\",\r\n    \"mode\": \"purge\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hornet.rmq.cloudamqp.com/api/queues/vahizmsb/email/contents",
+					"protocol": "https",
+					"host": [
+						"hornet",
+						"rmq",
+						"cloudamqp",
+						"com"
+					],
+					"path": [
+						"api",
+						"queues",
+						"vahizmsb",
+						"email",
+						"contents"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -2,7 +2,7 @@
 Documentation        Método POST no endpoint /partner da API buger-eats
 
 Resource    ../resources/base.robot
-Library    ../resources/factories/partner.py
+Library    ../resources/Python/partner.py
 
 #TODO Testar os cenarios na minha máquina, verificar se estão passando.
 
